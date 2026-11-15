@@ -1,0 +1,21 @@
+OHGS v43 — PUT THIS UPDATE ON THE WEBSITE CUSTOMERS SEE
+
+This package adds Pioneer PI2800E2 and Eagle EGX1205 generator pages and their OHGS flyers. It includes the Arusha showroom video and the four earlier OHGS product features.
+
+1. In Vercel, open the project whose Domains section contains your live website address.
+2. Open that project's Settings > Git and follow its connected GitHub repository link.
+3. Extract OHGS_GITHUB_UPLOAD_READY.zip.
+4. With GitHub Desktop, clone the connected repository and copy ALL extracted files into its folder. Commit and Push. Include media and every media/responsive file. Keep index.html and package.json at the repository root.
+   With GitHub's website, use batches of no more than 100 files and preserve the same folder paths.
+5. In Vercel, use Framework Preset Other, Root Directory ./, Build Command npm run build, Output Directory dist.
+6. Wait for a successful production deployment. If using Redeploy, turn off Use existing Build Cache for this update.
+7. On your live domain, open /version-check.txt. It must contain v43-generator-flyers.
+8. Open /deploy-test and press Check deployed files. The Page, Video controller and Version file values should all show v43-generator-flyers.
+9. In Home, tap Compare generators to review both models. In Products, search for PI2800E2 or EGX1205. In Offers, open and download each flyer. The 41-second Home showroom video should start muted on browsers that allow autoplay.
+
+If an older version is still shown, use the project/repository attached to the live domain and verify its production branch. A successful deployment to another project does not change the website on your domain.
+
+For a new GitHub repository and Vercel project, follow DEPLOY_TO_NEW_VERCEL.txt. Keep your current production project until the replacement is tested and the domain has been moved.
+
+PREVIEW BEFORE UPLOADING
+Open a terminal in the extracted website folder. Run npm ci, then npm run dev. Open the Local URL printed in the terminal. Keep that terminal open while reviewing the website.
